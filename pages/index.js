@@ -3,18 +3,16 @@ import { Game } from "../components/game"
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
+    <div className="flex flex-col items-center justify-center min-h-screen py-2 bg-red-100">
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Tic Tac Toe</title>
+        <link rel="icon" href="/tictactoe.png" />
       </Head>
 
-      <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
+      <main className="flex flex-col items-center justify-center w-full flex-1 px-20 py-10 text-center ">
+        <h1 className="text-4xl font-bold py-3 px-2 my-7 border-2 rounded border-green-600 bg-green-200">
+          <img src="/tictactoe.png" alt="icon" className="inline h-10 mx-2" />
+          <span className="text-green-600">Tic</span><span className="text-green-700">Tac</span><span className="text-green-800">Toe</span>
         </h1>
 
         <Game />
